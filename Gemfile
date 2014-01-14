@@ -3,14 +3,24 @@ ruby '2.0.0'
 gem 'rails', '4.0.2'
 gem 'sass-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
+gem 'database_cleaner', :group => :test
+gem 'rspec-rails', :group => [:development,:test]
+gem "email_spec", :group => :test
+gem "cucumber-rails", :group => :test , :require => :false
+gem "launchy" , :group => :test
+gem "capybara", :group => :test
+gem "factory_girl_rails", :group => [:development, :test]
 gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
+gem 'rolify'
+gem 'simple_form'
 gem 'bootstrap-sass', '>= 3.0.0.0'
 gem 'devise'
 gem 'figaro'
 gem 'mysql2'
+gem 'gibbon'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
@@ -18,3 +28,4 @@ group :development do
   gem 'quiet_assets'
   gem 'rails_layout'
 end
+  
